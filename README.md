@@ -1,2 +1,2 @@
-# COP-3337-Object-Oriented-Programming
-Workspace for Object Oriented Programming for the Spring '26 semester
+# COP-3337
+Workspace for Object COP 3337: Oriented Programming for the Spring '26 semester
