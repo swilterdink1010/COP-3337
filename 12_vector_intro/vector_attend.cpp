@@ -20,7 +20,7 @@ int main(void) {
 void rotateLeft(std::vector<char>& v, int k) {
     k %= v.size();
     while (k > 0) {
-        v.insert(v.end(), v[0]);
+        v.insert(v.end(), v.at(0));
         v.erase(v.begin());
         k--;
     }
