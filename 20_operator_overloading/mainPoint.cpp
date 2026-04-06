@@ -3,21 +3,19 @@
 using namespace std;
 
 int main() {
-    Point p1(3, 4);
-    Point p2(5, 4);
-    Point p3(50, 70);
+    Point p1(3, 4, "p1");
+    Point p2(3, 4);
+    Point p3(p1);
 
-    if (p1 != p2) {
-        cout << (char) p3[0];
-    }
-    else {
-        cout << (char) p3[1];
-    }
+    p2 = p3;
 
-    p1[0] = 52;
-    cout << (char) p1[0];
+    cout << p1;
+    cout << p2.toString();
+    cout << p3.toString();
 
-    cout << "Y5B" << endl;
+    Point p4(1, 2, "p4");
+
+    cin >> p4;
 
     return 0;
 }
