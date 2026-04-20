@@ -28,9 +28,13 @@ public:
     int* data;
 };
 
+void tester(Son& s) {}
+
 int main() {
     Dad* dad = new Son();
-    delete dad;
+
+    // tester(*dad);
+    tester(*static_cast<Son*>(dad));
 
     return 0;
 }
